@@ -4,7 +4,7 @@ const requestUser = (key) => {
     return async (req, res, next) => {
         const startDB = Date.now()
         const users = await dbo.connection
-            .collection('users')
+            .collection('user')
             .find({})
             .toArray()
 
